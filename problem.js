@@ -13,3 +13,22 @@ CHALLENGE
 - If the password is less than 5 characters, log out "Your password is too short!".
 */
 
+let password = "Unicorns";
+
+function passwordCheck(input, password) {
+    if (input === password) {
+        console.log("Access Granted!");
+    } else if (input !== password) {
+        console.log("Access Denied!");
+    }
+}
+passwordCheck("Unicorns", password);
+passwordCheck("Ponies", password);
+
+//My thought process:
+//To ensure I got the correct console log outs for correct and incorrect passwords, I utilized two "plates" (input, password)
+//with the let declaration to delcare whether it was the right or wrong password. If the food on the plate is the correct order,
+// then it will output as "Access Granted" because the let variable (food) is the exact as the inputed password (ordered food).
+// If the user inputs were incorrect (or the food came out wrong), the output should show as "accesss denied", because it was not what I ordered.
+//However, something has gone wrong in my code because whenever I try to output a different variable such as "reset" or "forgot", the console log repeats what I have originally outputed
+//Because of this, I could not properly code the reset or forgot inputs or do the challenge.
